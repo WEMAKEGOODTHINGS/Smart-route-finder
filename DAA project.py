@@ -148,7 +148,7 @@ frame = tk.Frame(canvas, bg="white")
 frame.place(relx=0.5, rely=0.5, anchor="center", width=430, height=400)
 
 # Title
-tk.Label(frame, text="🚀 Smart Route Finder",
+tk.Label(frame, text=" Smart Route Finder",
         font=("Helvetica", 18, "bold"),
         bg="white").pack(pady=15)
 
@@ -156,15 +156,15 @@ tk.Label(frame, text="🚀 Smart Route Finder",
 start_var = tk.StringVar()
 end_var = tk.StringVar()
 
-tk.Label(frame, text="📍 Where are you now?", bg="white").pack()
+tk.Label(frame, text=" Where are you now?", bg="white").pack()
 ttk.Combobox(frame, textvariable=start_var, values=locations, state="readonly").pack(pady=5)
 
-tk.Label(frame, text="🎯 Your destination?", bg="white").pack()
+tk.Label(frame, text=" Your destination?", bg="white").pack()
 ttk.Combobox(frame, textvariable=end_var, values=locations, state="readonly").pack(pady=5)
 
 # Button
 tk.Button(frame,
-        text="✨ Find Best Route",
+        text="Find Best Route",
         command=find_routes,
         bg="#6C63FF",
         fg="white",
